@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    background-color: rgb(105, 220, 182);
+}
+h1 {
+    color: white;
+    font-size: 60px;
+    margin: 2% 39%;
+}
+h3 {
+    color: white;
+    font-size: 20px;
+}
+
+#add-task {
+    display: flex;
+    margin-bottom: 25px;
+}
+#todo-input {
+    width: 40%;
+    margin-left: 25%;
+    padding: 10px;
+    border-radius: 5px;
+}
+#add-task button {
+    width: 8%;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+.todo-container {
+    width: fit-content;
+    height: 60vh;
+    margin: 50px auto auto;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    border-radius: 5px;
+    padding: 15px;
+}
+.boxes-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+.task {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 40px 0px;
+    cursor: grab;
+    padding: 10px;
+    border-radius: 5px;
+}
+.box {
+    width: 250px;
+    height: 50%;
+    padding: 15px;
+    border-radius: 5px;
+}
+.box:not(:last-of-type) {
+    border-right: 2px solid rgb(46, 45, 45);
+}
+#clear-btn {
+    width: 10%;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 1% 44%;
+}
